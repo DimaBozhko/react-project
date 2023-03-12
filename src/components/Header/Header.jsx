@@ -1,17 +1,17 @@
-import styles from "./Header.modules.scss"
+import styles from "./Header.module.scss"
 
 const Header = () => {
     return (
-        <header className={styles.Header}>
-        <div className="container">
-          <div className="header__wrapper">
+      <header className={styles.header}>
+        <div className={`${styles.container} container`}>
+          <div className={styles.header__wrapper}>
             <a href="/">
               <img src="img/logo-black.png" alt="Logotype" />
             </a>
-            <div className="navbar">
+            <div className={styles.navbar}>
               <ul>
                 <li>
-                  <a href="/" className="navbar__icon">
+                  <a href="/" className={styles.navbar__icon}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -29,7 +29,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="navbar__icon">
+                  <a href="/" className={styles.navbar__icon}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -44,8 +44,7 @@ const Header = () => {
                         d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
                       />
                     </svg>
-  
-                    <span className="number">2</span>
+                    <span className={styles.number}>2</span>
                   </a>
                 </li>
               </ul>

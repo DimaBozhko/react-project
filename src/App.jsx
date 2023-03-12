@@ -1,24 +1,14 @@
-
 import './App.scss';
-import Header from './components/Header/Header';
-import Banner from './components/Banner/Banner';
-import Category from './components/Category/Category';
-import Products from './components/Products/Products';
-import Footer from './components/Footer/Footer';
+import Home from "./pages/Home";
+import WishList from './pages/WishList';
+import {Routes, Route, NavLink} from "react-router-dom";
+
 function App() {
-
-
-
-
     return (
-        <div>
-            <Header/>
-            <Banner/>
-            <Category/>
-            <Products/>
-            <Footer/>
-        </div>
-
+        <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/WishList" element={<WishList/>}></Route>            
+        </Routes>
     )
 
 }

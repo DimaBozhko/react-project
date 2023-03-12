@@ -1,11 +1,12 @@
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
 
     return (
-        <footer className="footer">
-            <div className="container">
-                <div className="footer__wrapper">
-                    <p className="footer__copyright">© Shop</p>
+        <footer className={styles.footer}>
+            <div className={`${styles.container} container`}  >
+                <div className={styles.footer__wrapper}>
+                    <p className={styles.footer__copyright}>© Shop</p>
                 </div>
             </div>
         </footer>
