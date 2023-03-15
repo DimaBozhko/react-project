@@ -1,5 +1,8 @@
+
+import List from "../components/List/List";
+
 const WishList = () => {
-    return <h1>Hello World !</h1>
+    return <List/>
 }
 
 export default WishList;
